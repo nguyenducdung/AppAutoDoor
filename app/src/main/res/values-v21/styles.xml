@@ -1,0 +1,46 @@
+<resources>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+    </style>
+
+    <style name="RaiseButtonPurple" parent="Widget.AppCompat.Button.Colored">
+        <item name="android:backgroundTint">@color/colorPurple</item>
+        <item name="android:textColor">@color/colorWhite</item>
+    </style>
+
+    <style name="RaiseButtonPrimary" parent="Widget.AppCompat.Button.Colored">
+        <item name="android:backgroundTint">@color/colorPrimary</item>
+        <item name="android:textColor">@color/colorWhite</item>
+    </style>
+    <style name="RaiseButtonViolet" parent="Widget.AppCompat.Button.Colored">
+        <item name="android:backgroundTint">@color/colorViolet</item>
+        <item name="android:textColor">@color/colorWhite</item>
+    </style>
+    <style name="RaiseButtonTransparent" parent="Widget.AppCompat.Button.ButtonBar.AlertDialog">
+        <item name="android:backgroundTint">@color/colorWhite</item>
+        <item name="android:textColor">@color/colorPrimaryDark</item>
+    </style>
+    <style name="FlatButton" parent="Base.Widget.AppCompat.Button.Borderless">
+        <item name="android:textColor">@color/colorBrown</item>
+    </style>
+    <style name="TransparentButton" parent="Base.Widget.AppCompat.Toolbar.Button.Navigation">
+        <item name="android:backgroundTint">@color/colorPurple</item>
+        <item name="android:textColor">@color/colorPurple</item>
+    </style>
+    <style name="FloatEditText" parent="Widget.Design.TextInputLayout">
+        <item name="android:backgroundTint">@color/colorPurple</item>
+        <item name="android:textColorHint">@color/colorPurple</item>
+
+        <item name="android:colorAccent">@color/colorPurple</item>
+        <item name="android:colorControlNormal">@color/colorPurple</item>
+        <item name="android:colorControlActivated">@color/colorPurple</item>
+        <item name="hintTextAppearance">@color/colorPurple</item>
+    </style>
+    <style name="CheckboxTheme">
+        <item name="android:colorAccent">@color/colorPurpleDark</item>
+        <item name="android:colorControlNormal">@color/colorPurpleDark</item>
+    </style>
+</resources>

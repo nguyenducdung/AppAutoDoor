@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_margin="20dp">
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginBottom="10dp">
+
+        <EditText
+            android:id="@+id/editextName"
+            style="@style/FloatEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/ic_sentiment_satisfied_black_24dp"
+            android:drawablePadding="5dp"
+            android:paddingRight="35dp"
+            android:hint="Name"
+            android:inputType="textMultiLine"
+            android:singleLine="true" />
+
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp">
+
+        <EditText
+            android:id="@+id/editextClick"
+            style="@style/FloatEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/ic_comment_black_24dp"
+            android:drawablePadding="5dp"
+            android:paddingRight="35dp"
+            android:hint="Command"
+            android:singleLine="true" />
+
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp">
+
+        <EditText
+            android:id="@+id/editextPress"
+            style="@style/FloatEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/ic_comment_black_24dp"
+            android:drawablePadding="5dp"
+            android:paddingRight="35dp"
+            android:hint="Command"
+            android:singleLine="true" />
+
+    </android.support.design.widget.TextInputLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_margin="5dp">
+
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/buttonSubmit"
+            style="@style/RaiseButtonPrimary"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:text="Submit"
+            android:textAllCaps="false"
+            android:layout_marginRight="15dp"/>
+
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/buttonCancel"
+            style="@style/RaiseButtonTransparent"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:text="Cancel"
+            android:textAllCaps="false"
+            android:layout_marginLeft="15dp"/>
+
+    </LinearLayout>
+
+</LinearLayout>
