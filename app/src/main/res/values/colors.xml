@@ -18,4 +18,6 @@
     <color name="colorBrown">#4E342E</color>
     <color name="colorPurpleDark">#49599a</color>
     <color name="colorWhiteTransper">#80ffffff</color>
+    <color name="color_red">#F44336</color>
 </resources>
+

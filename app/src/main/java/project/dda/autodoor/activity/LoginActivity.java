@@ -35,20 +35,16 @@ public class LoginActivity extends AppCompatActivity {
         buttonLogin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
                 String mUsername = editTextUsername.getText().toString();
                 String mPassword = editTextPassword.getText().toString();
-
                 if (mUsername.isEmpty()) {
                     Toast.makeText(LoginActivity.this, "Tài khoản không được để trống", Toast.LENGTH_SHORT).show();
                     return;
                 }
-
                 if (mPassword.isEmpty()) {
                     Toast.makeText(LoginActivity.this, "Mật khẩu không được để trống", Toast.LENGTH_SHORT).show();
                     return;
                 }
-
                 //TODO: create thread to login
                 JSONTaskLogin jsonTaskLogin = new JSONTaskLogin(LoginActivity.this);
                 jsonTaskLogin.execute("Login", "http://system.aks.vn/api/login", mUsername, "#" + mPassword);

@@ -26,7 +26,6 @@
         android:textColor="@color/colorPrimaryDark"
         android:textSize="20sp"
         android:textStyle="bold"/>
-
     <!--body-->
     <LinearLayout
         android:id="@+id/llBody"
@@ -81,8 +80,6 @@
                     android:paddingRight="35dp"/>
 
             </android.support.design.widget.TextInputLayout>
-
-
             <android.support.v7.widget.AppCompatButton
                 android:id="@+id/buttonVisiable"
                 style="@style/TransparentButton"
@@ -93,9 +90,6 @@
                 android:layout_marginTop="13dp"
                 android:background="@drawable/ic_visibility_off_black_24dp" />
         </RelativeLayout>
-
-
-
         <android.support.v7.widget.AppCompatButton
             android:id="@+id/buttonLogin"
             style="@style/RaiseButtonPrimary"
@@ -106,8 +100,6 @@
             android:layout_marginTop="10dp"
             android:text="Login" />
     </LinearLayout>
-
-
 
     <ProgressBar
         android:id="@+id/progressBar"
