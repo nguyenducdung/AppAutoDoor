@@ -1,11 +1,11 @@
-package project.dda.autodoor.Model;
+package project.dda.autodoor.model;
 
 /**
  * Created by Duy Anh on 12/14/2018
  **/
 public class Login {
-    public String Name;
-    public String Pass;
+    private String Name;
+    private String Pass;
 
 
     public String getName() {

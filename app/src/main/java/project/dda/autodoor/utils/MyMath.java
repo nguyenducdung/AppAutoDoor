@@ -1,4 +1,4 @@
-package project.dda.autodoor.Math;
+package project.dda.autodoor.utils;
 
 import java.util.ArrayList;
 import java.util.HashMap;

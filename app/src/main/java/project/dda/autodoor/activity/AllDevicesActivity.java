@@ -1,4 +1,4 @@
-package project.dda.autodoor.MainAllDevices;
+package project.dda.autodoor.activity;
 
 import android.content.Intent;
 import android.os.Build;
@@ -17,24 +17,25 @@ import org.json.JSONObject;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
+import java.util.Objects;
 import java.util.Stack;
 
-import project.dda.autodoor.Button.MyButton;
-import project.dda.autodoor.Image.MyImage;
-import project.dda.autodoor.Math.MyMath;
-import project.dda.autodoor.Menu.MainActivity;
-import project.dda.autodoor.Model.Pin;
-import project.dda.autodoor.Model.Product;
+import project.dda.autodoor.model.MyPins;
+import project.dda.autodoor.custom.MyButton;
+import project.dda.autodoor.custom.MyImage;
+import project.dda.autodoor.utils.MyMath;
+import project.dda.autodoor.model.Pin;
+import project.dda.autodoor.model.Product;
 import project.dda.autodoor.R;
-import project.dda.autodoor.TextView.MyTextView;
+import project.dda.autodoor.custom.MyTextView;
 
 public class AllDevicesActivity extends AppCompatActivity implements View.OnClickListener{
 
-    LinearLayout linearLayoutMain;
-    Button buttonBack;
-    Map<String,Integer> mapImage;
-    Stack<MyPins> mPins;
-    Product mProduct;
+    private LinearLayout linearLayoutMain;
+    private Button buttonBack;
+    private Map<String,Integer> mapImage;
+    private Stack<MyPins> mPins;
+    private Product mProduct;
 
     @RequiresApi(api = Build.VERSION_CODES.M)
     @Override
@@ -76,13 +77,14 @@ public class AllDevicesActivity extends AppCompatActivity implements View.OnClic
     }
 
     //TODO: get data from intent
+    @RequiresApi(api = Build.VERSION_CODES.KITKAT)
     void getDataFromIntent()
     {
         Intent intent = getIntent();
         String model = intent.getStringExtra("Model");
         try {
             mProduct = new Product(new JSONObject(model));
-            ArrayList<String> strings = MyMath.SplitComma(MyMath.SubSquareBrackets(mProduct.Pins),"Command");
+            ArrayList<String> strings = MyMath.SplitComma(Objects.requireNonNull(MyMath.SubSquareBrackets(mProduct.Pins)),"Command");
 
             if(strings != null)
             {

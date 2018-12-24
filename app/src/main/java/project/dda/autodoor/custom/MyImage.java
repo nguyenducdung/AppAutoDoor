@@ -1,30 +1,26 @@
-package project.dda.autodoor.TextView;
+package project.dda.autodoor.custom;
 
 import android.content.Context;
-import android.graphics.Color;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
-import android.widget.TextView;
 
 /**
  * Created by Duy Anh on 12/19/2018
  **/
-public class MyTextView {
+public class MyImage {
 
     static Integer MATCH_PARENT = LinearLayout.LayoutParams.MATCH_PARENT;
     static Integer WRAP_CONTENT = LinearLayout.LayoutParams.WRAP_CONTENT;
 
     //TODO: create image
-    public static TextView BasicTextView(Context context,String text,Integer size)
+    public static ImageView BasicImage(Context context,Integer res)
     {
-        TextView textView = new TextView(context);
-        textView.setText(text);
-        textView.setTextSize(size);
-        textView.setAllCaps(true);
-        textView.setTextColor(Color.BLUE);
-        textView.setLayoutParams(setParams(WRAP_CONTENT,WRAP_CONTENT));
+        ImageView imageView = new ImageView(context);
+        imageView.setLayoutParams(setParams(WRAP_CONTENT,WRAP_CONTENT));
+        imageView.clearColorFilter();
+        imageView.setImageResource(res);
 
-        return textView;
+        return imageView;
     }
 
     //TODO: setting layout cua Image

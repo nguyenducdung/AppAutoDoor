@@ -1,4 +1,4 @@
-package project.dda.autodoor.Wifi;
+package project.dda.autodoor.wifi;
 
 import android.content.Context;
 import android.net.wifi.WifiConfiguration;

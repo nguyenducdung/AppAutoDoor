@@ -1,6 +1,5 @@
-package project.dda.autodoor.Login;
+package project.dda.autodoor.activity;
 
-import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.text.method.PasswordTransformationMethod;
@@ -9,20 +8,15 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
-import org.json.JSONObject;
-
-import java.util.ArrayList;
-
-import project.dda.autodoor.BackGround.JSONTaskLogin;
-import project.dda.autodoor.Math.MyMath;
+import project.dda.autodoor.background.JSONTaskLogin;
 import project.dda.autodoor.R;
 
 public class LoginActivity extends AppCompatActivity {
-    boolean IsHide = false;
-    EditText editTextUsername;
-    EditText editTextPassword;
-    Button buttonLogin;
-    Button buttonVisiable;
+    private boolean IsHide = false;
+    private EditText editTextUsername;
+    private EditText editTextPassword;
+    private Button buttonLogin;
+    private Button buttonVisiable;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

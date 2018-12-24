@@ -1,4 +1,4 @@
-package project.dda.autodoor.Model;
+package project.dda.autodoor.model;
 
 import android.util.Log;
 

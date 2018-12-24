@@ -1,4 +1,4 @@
-package project.dda.autodoor.Menu;
+package project.dda.autodoor.activity;
 
 import android.content.Intent;
 import android.os.AsyncTask;
@@ -25,37 +25,36 @@ import android.widget.Toast;
 import java.util.HashMap;
 import java.util.Map;
 
-import project.dda.autodoor.Button.MyButton;
-import project.dda.autodoor.DataMemory.MyDataMemory;
-import project.dda.autodoor.MainAllDevices.AllDevicesActivity;
-import project.dda.autodoor.Math.MyMath;
-import project.dda.autodoor.Model.User;
+import project.dda.autodoor.custom.MyButton;
+import project.dda.autodoor.memory.MyDataMemory;
+import project.dda.autodoor.utils.MyMath;
+import project.dda.autodoor.model.User;
 import project.dda.autodoor.R;
 import project.dda.autodoor.TCPIp.TCPClient;
-import project.dda.autodoor.Wifi.Wifi;
-import project.dda.autodoor.Wifi.WifiSettingActivity;
+import project.dda.autodoor.wifi.Wifi;
+import project.dda.autodoor.wifi.WifiSettingActivity;
 
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener, View.OnClickListener {
 
     //region TODO: Properties
-    LinearLayout linearLayoutMain;
-    MyDataMemory mMemory;
+    private LinearLayout linearLayoutMain;
+    private MyDataMemory mMemory;
 
-    static Map<String, String> mapValue = new HashMap<>();
-    Map<String, Integer> mapImage;
-    Button buttonWifi;
-    boolean IsEnabled = true;
+    private static Map<String, String> mapValue = new HashMap<>();
+    private Map<String, Integer> mapImage;
+    private Button buttonWifi;
+    private boolean IsEnabled = true;
     public static boolean IsConnected = false;
-    ConnectTask mConnectTask;
+    private ConnectTask mConnectTask;
     public static TCPClient mTcpClient;
-    static Integer sleep = 1000;
-    static User mUser = new User();
-    static String[] mModel;
+    private static Integer sleep = 1000;
+    private static User mUser = new User();
+    private static String[] mModel;
 
-    ImageView imageViewUser;
-    TextView textViewName;
-    TextView textViewDescription;
+    private ImageView imageViewUser;
+    private TextView textViewName;
+    private TextView textViewDescription;
     //endregion
 
     @RequiresApi(api = Build.VERSION_CODES.M)

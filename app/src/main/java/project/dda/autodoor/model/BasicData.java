@@ -1,17 +1,13 @@
-package project.dda.autodoor.Model;
-
-import org.json.JSONObject;
+package project.dda.autodoor.model;
 
 /**
  * Created by Duy Anh on 12/15/2018
  **/
 public class BasicData {
-    public String Code;
-    public String Message;
-    public String Data;
-    public String Value;
-
-
+    private String Code;
+    private String Message;
+    private String Data;
+    private String Value;
 
     public void setValue(String value) {
         Value = value;

@@ -1,4 +1,4 @@
-package project.dda.autodoor.DataMemory;
+package project.dda.autodoor.memory;
 
 import android.content.Context;
 

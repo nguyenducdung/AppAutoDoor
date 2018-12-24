@@ -1,6 +1,4 @@
-package project.dda.autodoor.Wifi;
-
-import android.net.wifi.WifiManager;
+package project.dda.autodoor.wifi;
 
 /**
  * Created by Duy Anh on 12/12/2018

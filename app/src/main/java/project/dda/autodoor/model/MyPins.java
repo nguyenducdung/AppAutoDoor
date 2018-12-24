@@ -1,6 +1,4 @@
-package project.dda.autodoor.MainAllDevices;
-
-import project.dda.autodoor.Model.Pin;
+package project.dda.autodoor.model;
 
 /**
  * Created by Duy Anh on 12/19/2018
@@ -19,7 +17,7 @@ public class MyPins {
         Name = name;
     }
 
-    public void setPin(project.dda.autodoor.Model.Pin pin) {
+    public void setPin(project.dda.autodoor.model.Pin pin) {
         Pin = pin;
     }
 
@@ -28,7 +26,7 @@ public class MyPins {
         return Name;
     }
 
-    public project.dda.autodoor.Model.Pin getPin() {
+    public project.dda.autodoor.model.Pin getPin() {
         return Pin;
     }
 }

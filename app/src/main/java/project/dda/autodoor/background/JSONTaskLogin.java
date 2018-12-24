@@ -1,7 +1,6 @@
-package project.dda.autodoor.BackGround;
+package project.dda.autodoor.background;
 
 import android.content.Context;
-import android.content.Intent;
 import android.os.AsyncTask;
 import android.util.Log;
 import android.widget.Toast;
@@ -15,11 +14,8 @@ import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.net.HttpURLConnection;
 import java.net.URL;
-import java.util.Map;
 
-import project.dda.autodoor.Math.MyMath;
-import project.dda.autodoor.Menu.MainActivity;
-import project.dda.autodoor.Model.User;
+import project.dda.autodoor.model.User;
 
 /**
  * Created by Duy Anh on 12/14/2018

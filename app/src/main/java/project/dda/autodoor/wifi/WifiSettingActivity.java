@@ -1,4 +1,4 @@
-package project.dda.autodoor.Wifi;
+package project.dda.autodoor.wifi;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
